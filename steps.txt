@@ -1,0 +1,35 @@
+Step 1 — Create your project folder structure
+Make sure you have these folders/files:
+```Tailwind CSS/
+├── dist/
+│   └── index.html
+└── src/
+    └── input.css
+```
+Step 2 — Open terminal in your project & init npm
+`npm init -y`
+
+Step 3 — Install Tailwind v4
+`npm install tailwindcss @tailwindcss/cli`
+
+Step 4 — Add this to src/input.css
+`css@import "tailwindcss";`
+That's it. No more @tailwind base/components/utilities in v4.
+
+Step 5 — Link the output CSS in dist/index.html
+```html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">  <!-- 👈 this -->
+  <title>My Site</title>
+</head>
+<body>
+  <h1 class="text-3xl font-bold text-blue-500">Hello Tailwind v4!</h1>
+</body>
+</html>
+```
+Step 6 — Run the watcher
+```powershell
+npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch```
