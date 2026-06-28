@@ -32,4 +32,5 @@ Step 5 — Link the output CSS in dist/index.html
 ```
 Step 6 — Run the watcher
 ```powershell
-npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch```
+npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch
+```
