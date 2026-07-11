@@ -648,9 +648,6 @@
   .p-30 {
     padding: calc(var(--spacing) * 30);
   }
-  .p-40 {
-    padding: calc(var(--spacing) * 40);
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -692,9 +689,6 @@
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
-  }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
@@ -983,9 +977,24 @@
       margin-top: calc(var(--spacing) * 16);
     }
   }
+  .lg\:mt-20 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:mb-30 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:mb-40 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:mb-50 {
+    @media (width >= 64rem) {
+      margin-bottom: var(--spacing-50);
     }
   }
   .lg\:ml-70 {
@@ -1099,24 +1108,9 @@
       top: var(--spacing-100);
     }
   }
-  .xl\:top-150 {
-    @media (width >= 80rem) {
-      top: var(--spacing-150);
-    }
-  }
-  .xl\:top-170 {
-    @media (width >= 80rem) {
-      top: var(--spacing-170);
-    }
-  }
   .xl\:top-174 {
     @media (width >= 80rem) {
       top: calc(var(--spacing) * 174);
-    }
-  }
-  .xl\:top-180 {
-    @media (width >= 80rem) {
-      top: calc(var(--spacing) * 180);
     }
   }
   .xl\:top-\[490px\] {
@@ -1337,6 +1331,16 @@
   .xl\:min-h-180 {
     @media (width >= 80rem) {
       min-height: calc(var(--spacing) * 180);
+    }
+  }
+  .xl\:min-h-200 {
+    @media (width >= 80rem) {
+      min-height: var(--spacing-200);
+    }
+  }
+  .xl\:min-h-2000 {
+    @media (width >= 80rem) {
+      min-height: calc(var(--spacing) * 2000);
     }
   }
   .xl\:w-3xl {
