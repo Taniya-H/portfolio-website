@@ -390,6 +390,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -477,19 +480,42 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1 {
+    --tw-translate-y: var(--spacing);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-1\/2 {
     --tw-translate-y: calc(1 / 2 * 100%);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .animate-marquee {
     animation: var(--animate-marquee);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .list-\[square\] {
     list-style-type: square;
@@ -566,6 +592,10 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -618,6 +648,9 @@
   .p-30 {
     padding: calc(var(--spacing) * 30);
   }
+  .p-40 {
+    padding: calc(var(--spacing) * 40);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -626,6 +659,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
@@ -656,6 +692,9 @@
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
@@ -795,8 +834,30 @@
   .text-yellow-400 {
     color: var(--color-yellow-400);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .\[-webkit-text-stroke\:1px_white\] {
     -webkit-text-stroke: 1px white;
+  }
+  .hover\:font-\[\'Press_Start_2P\'\] {
+    &:hover {
+      @media (hover: hover) {
+        font-family: 'Press Start 2P';
+      }
+    }
+  }
+  .hover\:font-extrabold {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-extrabold);
+        font-weight: var(--font-weight-extrabold);
+      }
+    }
   }
   .sm\:-top-5 {
     @media (width >= 40rem) {
@@ -927,16 +988,6 @@
       margin-bottom: calc(var(--spacing) * 30);
     }
   }
-  .lg\:ml-56 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 56);
-    }
-  }
-  .lg\:ml-60 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 60);
-    }
-  }
   .lg\:ml-70 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 70);
@@ -1051,6 +1102,21 @@
   .xl\:top-150 {
     @media (width >= 80rem) {
       top: var(--spacing-150);
+    }
+  }
+  .xl\:top-170 {
+    @media (width >= 80rem) {
+      top: var(--spacing-170);
+    }
+  }
+  .xl\:top-174 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 174);
+    }
+  }
+  .xl\:top-180 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 180);
     }
   }
   .xl\:top-\[490px\] {
@@ -1723,6 +1789,26 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1732,14 +1818,25 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }

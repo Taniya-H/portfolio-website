@@ -7,21 +7,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Londrina+Outline&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <title>Lakshay Agarwal Portfolio</title>
     </head>
     <body class="bg-[#2E4A1F] overflow-x-hidden">
         <!-- nav bar -->
-        <header class="font-['Georgia',cursive] font-extrabold text-sm md:text- lg:text-sm xl:text-xl sticky top-0 z-150">
+        <header class="font-['Georgia',cursive] font-bold text-sm md:text- lg:text-sm xl:text-xl sticky top-0 z-150">
             <nav class="flex flex-row items-center gap-8 xl:flex xl:items-center xl:justify-between px-4 xl:px-0 py-3 xl:py-0">
                 <div class="flex items-center gap-3">
                     <img src="img/yellow_star.png" alt="logo" class="w-10 h-10 xl:w-22 xl:h-22">
                     <span class="text-white font-semibold">Lakshay Agarwal</span>
                 </div>
-                <ul class="flex flex-wrap items-center gap-2 xl:gap-8 text-white">
-                    <li>About Me</li>
-                    <li>Resume</li>
-                    <li>Work</li>
-                    <li class="bg-yellow-400 text-black px-3 py-1.5 xl:px-4 xl:py-2 rounded-full font-semibold">
+                <ul class="flex flex-wrap items-center gap-2 xl:gap-8 text-white ">
+                    <li class="hover:font-['Press_Start_2P'] hover:font-extrabold  cursor-pointer"><a href="#About">About Me</a></li>
+                    <li class=" hover:font-['Press_Start_2P'] hover:font-extrabold cursor-pointer"><a href="img/Lakshay_Agarwal_Resume.pdf" target="_blank">Resume</a></li>
+                    <li class=" hover:font-['Press_Start_2P'] hover:font-extrabold cursor-pointer"><a href="#work">Work</a></li>
+                    <li class="bg-yellow-400 hover:font-['Press_Start_2P'] cursor-pointer text-black px-3 py-1.5 xl:px-4 xl:py-2 rounded-full font-semibold class="hover:font-extrabold cursor-pointer"">
                         Get In Touch !!
                     </li>
                 </ul>
@@ -69,23 +70,31 @@
             </div>
 
             <!-- Page 2: About -->
-            <div class="font-['Georgia',cursive] relative">
+            <div  class="font-['Georgia',cursive] relative" id="About">
                 <div class="bg-amber-100 h-auto xl:h-200 relative px-6 py-12 xl:px-0 xl:py-0">
-                    <div class="relative xl:absolute xl:top-50 xl:left-50 text-3xl sm:text-5xl xl:text-7xl font-bold z-40">
+                    <div class="relative xl:absolute xl:top-50 xl:left-50 text-3xl sm:text-5xl xl:text-7xl font-bold z-40" >
                         Hello, <br> I'm Lakshay!
                     </div>
 
                     <p class="w-full max-w-2xl xl:w-3xl relative xl:absolute xl:top-100 xl:left-50 text-sm xl:text-base z-40 mt-6 xl:mt-0">
-                        I'm a BBA student at Chandigarh University and an AI-Driven Digital Marketing professional.
-                        I build data-informed content strategies using AI-assisted tools and prompt engineering,
-                        design and execute multi-channel campaigns, and create compelling social media narratives that convert. <br>
-
-                        My competitive edge: I don't just understand business, consumer behavior, and brand strategy —
-                        I apply AI to execute faster and smarter. From my work at Nation Innovation, I've scaled a
-                        LinkedIn channel from zero to 6,326 impressions with a 4,726% reach growth in just 90 days.
+                        A BBA student at Chandigarh University and an AI-driven digital
+                        marketer who believes the future of marketing belongs to people who
+                        can pair business strategy with AI execution speed. <br> <br>
+                        
+                        I built my personal LinkedIn content channel from zero, and in 90 days
+                        grew it to 6,326 impressions and 1,979+ members reached — a 4,726%
+                        increase in reach — through a data-driven, consistency-first content
+                        system. That same systems mindset shaped my work as a Digital
+                        Marketing Intern at Nation Innovation, where I ran SEO, managed
+                        multi-platform social content, and used tools like Claude, ChatGPT,
+                        Gemini, and Canva AI to cut content production time by roughly 50%
+                        without sacrificing quality. <br> <br>
+                        
+                        If you're looking for someone who can think in frameworks, execute
+                        with AI, and back it all up with real numbers, let's talk.
                     </p>
                     <a href="https://www.linkedin.com/in/lakshay-agarwal01/">
-                        <div class="bg-amber-200 h-auto xl:h-15 w-fit xl:w-95 p-3 xl:pt-3.5 rounded-3xl xl:rounded-4xl relative xl:absolute xl:top-150 xl:left-50 text-base xl:text-xl flex gap-3.5 z-40 mt-6 xl:mt-0">
+                        <div class="bg-amber-200 h-auto xl:h-15 w-fit xl:w-95 p-3 xl:pt-3.5 rounded-3xl xl:rounded-4xl relative xl:absolute xl:top-174 xl:left-50 text-base xl:text-xl flex gap-3.5 z-40 mt-6 xl:mt-0">
                             <img src="img/search_icon.png" alt="" class="h-8">
                             <span>linkedin.com/in/lakshay-agarwal</span>
                         </div>
@@ -161,10 +170,10 @@
 
                     <div class="bg-yellow-400 mt-12 xl:mt-0 xl:ml-10 font-['Georgia', cursive] h-auto xl:h-110 w-full xl:w-210 relative xl:absolute xl:bottom-0 xl:left-0 xl:translate-y-1/2 z-50 p-6 xl:p-0">
                         <strong class="text-2xl xl:text-4xl text-black xl:absolute xl:top-10 xl:left-5">Experience</strong>
-                        <div class="flex items-start gap-4 mt-6 xl:mt-30">
+                        <div class="flex items-start gap-4 mt-6 xl:mt-20">
                             <img src="img/white_star.png" alt="" class="w-12 h-12">
                             <ul class="text-black text-base xl:text-2xl flex flex-col sm:flex-row gap-1 sm:gap-4">
-                                <li>Mar 2026 — Now</li>
+                                <li>May 2026  — June 2026</li>
                                 <li><strong>Digital Marketing Intern</strong><br> Nation Innovation  ·  Delhi (Remote) <br>Social media, SEO content, AI-accelerated production</li>
                             </ul>
                         </div>
@@ -239,16 +248,16 @@
                             <div class="flex items-start gap-2">
                                 <img src="img/white_star.png" alt="" class="w-12 h-12">
                                 <ul class="text-black text-base xl:text-2xl flex flex-col sm:flex-row gap-1 sm:gap-4">
-                                    <li>Aug 2025</li>
-                                    <li><strong>Harvard Business Impact</strong><br> Innovation and Creativity</li>
+                                    <li>Aug 2025</li> 
+                                    <li><strong> Innovation and Creativity</strong><br><a href="certs/Harvard business impact.pdf" class="underline">Harvard Business Impact:Innovation and Creativity</a><br><a href="certs/performance_measurement.pdf" class="underline">Harvard Business Impact:Performance Measurement</a></li>
                                 </ul>
                             </div>
                             <img src="img/line_sticker.png" alt="" class="h-12 w-12 mb-4">
                             <div class="flex items-start gap-2">
                                 <img src="img/white_star.png" alt="" class="w-12 h-12">
                                 <ul class="text-black text-base xl:text-2xl flex flex-col sm:flex-row gap-1 sm:gap-4">
-                                    <li>Mar 2026</li>
-                                    <li><strong>AI Advantage Course</strong><br>WebVeda by Ankur Warikoo</li>
+                                    <li>Mar 2026</li> 
+                                    <li><strong>AI Advantage Course</strong><br><a href="certs/webveda.png" class="underline">WebVeda</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -257,8 +266,8 @@
                             <div class="flex items-start gap-2">
                                 <img src="img/white_star.png" alt="" class="w-12 h-12">
                                 <ul class="text-black text-base xl:text-2xl flex flex-col sm:flex-row gap-1 sm:gap-4">
-                                    <li>Mar 2026</li>
-                                    <li><strong>AI Fluency: Framework & Foundations</strong><br>Anthropic</li>
+                                    <li>Mar 2026</li> 
+                                    <li><strong>AI Fluency: Framework and Foundation</strong><br><a href="certs/anthropic.pdf" class="underline">Anthropic</a></li>
                                 </ul>
                             </div>
                             <img src="img/line_sticker.png" alt="" class="h-12 w-12 mb-4">
@@ -266,7 +275,7 @@
                                 <img src="img/white_star.png" alt="" class="w-12 h-12">
                                 <ul class="text-black text-base xl:text-2xl flex flex-col sm:flex-row gap-1 sm:gap-4">
                                     <li>Mar 2026</li>
-                                    <li><strong>AI Skills for Students</strong><br>Canva Design School</li>
+                                    <li><strong>AI Foundation Course</strong><br><a href="certs/jio.pdf" class="underline">Jio Institute</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -336,7 +345,7 @@
             </div>
 
             <!-- Page 5: Work -->
-            <div class="bg-[#F5EEE1] relative pb-10 text-[#9C8E74]">
+            <div class="bg-[#F5EEE1] relative pb-10 text-[#9C8E74]" id="work">
 
                 <!-- Work Item 01: Nation Innovation -->
                 <div class="flex flex-col xl:flex-row items-start gap-8 xl:gap-20 p-6 xl:p-30 z-50">
