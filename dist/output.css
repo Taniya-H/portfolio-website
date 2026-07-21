@@ -288,6 +288,18 @@
   .left-46 {
     left: calc(var(--spacing) * 46);
   }
+  .left-50 {
+    left: var(--spacing-50);
+  }
+  .left-60 {
+    left: calc(var(--spacing) * 60);
+  }
+  .left-68 {
+    left: calc(var(--spacing) * 68);
+  }
+  .left-80 {
+    left: calc(var(--spacing) * 80);
+  }
   .left-\[360px\] {
     left: 360px;
   }
@@ -895,6 +907,12 @@
     }
     .sm\:-left-10 {
       left: calc(var(--spacing) * -10);
+    }
+    .sm\:left-46 {
+      left: calc(var(--spacing) * 46);
+    }
+    .sm\:left-60 {
+      left: calc(var(--spacing) * 60);
     }
     .sm\:h-36 {
       height: calc(var(--spacing) * 36);
