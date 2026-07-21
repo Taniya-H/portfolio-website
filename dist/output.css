@@ -351,6 +351,9 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
   }
@@ -586,11 +589,20 @@
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .gap-x-16 {
     column-gap: calc(var(--spacing) * 16);
   }
+  .gap-x-20 {
+    column-gap: calc(var(--spacing) * 20);
+  }
   .gap-y-8 {
     row-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-10 {
+    row-gap: calc(var(--spacing) * 10);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -926,6 +938,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:mt-20 {
+      margin-top: calc(var(--spacing) * 20);
+    }
     .md\:h-auto {
       height: auto;
     }
@@ -946,17 +961,35 @@
     .lg\:right-\[20px\] {
       right: 20px;
     }
+    .lg\:mt-0 {
+      margin-top: 0px;
+    }
     .lg\:mt-14 {
       margin-top: calc(var(--spacing) * 14);
     }
     .lg\:mt-20 {
       margin-top: calc(var(--spacing) * 20);
     }
+    .lg\:mr-6 {
+      margin-right: calc(var(--spacing) * 6);
+    }
+    .lg\:mr-10 {
+      margin-right: calc(var(--spacing) * 10);
+    }
     .lg\:mb-30 {
       margin-bottom: calc(var(--spacing) * 30);
     }
+    .lg\:ml-18 {
+      margin-left: calc(var(--spacing) * 18);
+    }
+    .lg\:ml-20 {
+      margin-left: calc(var(--spacing) * 20);
+    }
     .lg\:ml-70 {
       margin-left: calc(var(--spacing) * 70);
+    }
+    .lg\:ml-auto {
+      margin-left: auto;
     }
     .lg\:flex {
       display: flex;
@@ -1090,8 +1123,14 @@
     .xl\:ml-10 {
       margin-left: calc(var(--spacing) * 10);
     }
+    .xl\:ml-32 {
+      margin-left: calc(var(--spacing) * 32);
+    }
     .xl\:ml-60 {
       margin-left: calc(var(--spacing) * 60);
+    }
+    .xl\:ml-auto {
+      margin-left: auto;
     }
     .xl\:block {
       display: block;
@@ -1339,6 +1378,9 @@
     }
     .xl\:py-10 {
       padding-block: calc(var(--spacing) * 10);
+    }
+    .xl\:py-12 {
+      padding-block: calc(var(--spacing) * 12);
     }
     .xl\:py-16 {
       padding-block: calc(var(--spacing) * 16);
